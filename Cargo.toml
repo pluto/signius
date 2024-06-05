@@ -1,0 +1,12 @@
+[package]
+name = "signius"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+binius_core = { git = "https://gitlab.com/IrreducibleOSS/binius.git"}
+binius_field = { git = "https://gitlab.com/IrreducibleOSS/binius.git"}
+binius_hash = { git = "https://gitlab.com/IrreducibleOSS/binius.git"}
+binius_ntt = { git = "https://gitlab.com/IrreducibleOSS/binius.git"}
+binius_utils = { git = "https://gitlab.com/IrreducibleOSS/binius.git"}
+binius_macros = { git = "https://gitlab.com/IrreducibleOSS/binius.git"}
