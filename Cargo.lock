@@ -77,16 +77,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "binius_macros"
-version = "0.1.0"
-source = "git+https://gitlab.com/IrreducibleOSS/binius.git#f3d12af2e329fa45f081703e69e74804ebc1d2e6"
-dependencies = [
- "proc-macro2",
- "quote",
- "syn 2.0.66",
-]
-
-[[package]]
 name = "binius_ntt"
 version = "0.1.0"
 source = "git+https://gitlab.com/IrreducibleOSS/binius.git#f3d12af2e329fa45f081703e69e74804ebc1d2e6"
@@ -538,11 +528,6 @@ name = "signius"
 version = "0.1.0"
 dependencies = [
  "binius_core",
- "binius_field",
- "binius_hash",
- "binius_macros",
- "binius_ntt",
- "binius_utils",
 ]
 
 [[package]]
