@@ -1,3 +1,3 @@
 # signius
-Fast Cryptographic Primitives in Binius
+Exploring Fast Cryptographic Primitives in Binius
 Starting with Sha256
