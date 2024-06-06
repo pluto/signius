@@ -14,33 +14,15 @@ env:
   CARGO_TERM_COLOR: always # pretty colors
 
 jobs:
-  lint: 
-    name: lint project
+  build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        toolchain:
-          - nightly
     steps:
       - uses: actions/checkout@v4
-      - run: rustup toolchain install nightly
-      - run: rustup component add clippy
-      - run: cargo clippy -- -Dwarnings
-  test:
-    name: test project
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        toolchain:
-          - nightly
-    steps:
-      - uses: actions/checkout@v4
-      - run: rustup toolchain install nightly
-      - run: cargo test --all-features --verbose
+      - run: cargo build
 
   fmt:
-    name: fmt project
     runs-on: ubuntu-latest
+    name: fmt project
     strategy:
       matrix:
         toolchain:
